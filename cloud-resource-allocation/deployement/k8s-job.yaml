@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: optimized-task
+spec:
+  template:
+    spec:
+      containers:
+      - name: task
+        image: my-app
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "0.4"
+      restartPolicy: Never
