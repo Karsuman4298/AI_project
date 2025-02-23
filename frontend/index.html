@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Resource Allocation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Cloud Resource Allocation</h1>
+        <h2> A simple web application to allocate resources to files</h2>
+        <h3> developed by suman kar</h3>
+
+        <div class="upload-section">
+            <h2>📂 Upload & Allocate Files</h2>
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">Upload File</button>
+            <p id="uploadStatus"></p>
+        </div>
+
+        <div class="resource-status">
+            <h2>🔄 Real-Time Resource Usage</h2>
+            <p>✅ CPU: <span id="cpuUsage">Fetching...</span>%</p>
+            <p>✅ RAM: <span id="ramUsage">Fetching...</span> MB</p>
+        </div>
+
+        <div class="file-list">
+            <h2>📜 Allocated Files</h2>
+            <ul id="fileList"></ul>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
