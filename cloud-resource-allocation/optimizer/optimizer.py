@@ -4,7 +4,7 @@ import numpy as np
 def fitness_function(ga_instance, solution, solution_idx):
     return np.sum(solution)  # Modify based on your use case
 
-print("Starting Genetic Algorithm Optimization...")  # ✅ Add this
+print("Starting Genetic Algorithm Optimization...")
 
 ga_instance = pygad.GA(
     num_generations=10,  # Reduce for quick testing
@@ -17,5 +17,5 @@ ga_instance = pygad.GA(
 
 ga_instance.run()
 
-print("Optimization complete!")  # ✅ Add this
-print("Best solution:", ga_instance.best_solution())  # ✅ Print best result
+print("Optimization complete!")
+print("Best solution:", ga_instance.best_solution())  #  Print best result
