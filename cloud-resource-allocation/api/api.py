@@ -2,10 +2,10 @@ from fastapi import FastAPI
 import sys
 import os
 
-# ✅ Ensure Python can find the optimizer module
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from optimizer.optimizer import ga_instance  # ✅ Now it should work
+from optimizer.optimizer import ga_instance  
 
 from optimizer.optimizer import ga_instance
 
